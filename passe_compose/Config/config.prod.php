@@ -9,7 +9,7 @@ define('APP_DB_NAME', 'saesemestre2_bdhistoire');
 define('APP_DB_HOST', 'mysql-saesmestre2.alwaysdata.net');
 
 // le nom de l'utilisateur MYSQL
-define('APP_DB_USER', '????');
+define('APP_DB_USER', '354434');
 
 // le mot de passe de l'utilisateur MYSQL
-define('APP_DB_PASSWORD', '???????');
+define('APP_DB_PASSWORD', 'root_123');

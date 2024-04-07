@@ -2,6 +2,7 @@ html{
     background-color: #f3dab3;
 }
 
+
 #logo{
     & img{
         height: 100px;
@@ -46,10 +47,19 @@ html{
             bottom: 20px;
             right: 20px;
         }
-
-        
+    }
+    & #detail{
+        margin: 20px;
+        & h1 {
+            font-family: "Sail", system-ui;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 3rem;
+        }
     }    
     & .podcast:hover{
         background-color: #363034;
     } 
+
+    
 }

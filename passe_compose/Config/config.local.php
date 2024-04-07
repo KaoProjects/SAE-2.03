@@ -3,7 +3,7 @@
 /* Fichier : /config/config.local.php */
 
 // le nom de la base
-define('APP_DB_NAME', '????');
+define('APP_DB_NAME', 'mmi16_bdhistoire');
 
 // le nom de la machine qui héberge le serveur MYSQL
 define('APP_DB_HOST', 'localhost');
