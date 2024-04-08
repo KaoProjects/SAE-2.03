@@ -41,14 +41,11 @@ html{
         height: 250px;
         width: 250px;
         position: relative;
-        & .podcastTitle {
+        & p{
             color: white;
             position: absolute;
             bottom: 20px;
             right: 20px;
-        }
-        & .resume {
-            display: none;
         }
     }
     & #detail{
@@ -62,9 +59,6 @@ html{
     }    
     & .podcast:hover{
         background-color: #363034;
-        & .resume {
-            display: block;
-        }
     } 
 
     

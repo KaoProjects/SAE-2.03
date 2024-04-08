@@ -12,10 +12,8 @@ echo head("Passé Composé")?>
         </div>
         <div id="podcastsList">
             <div class="podcast">
-                <div class="podcastTitle">
-                    <p>podcast</p>
-                    <p class="resume">Lorem ipsum sit dolor amet</p>
-                </div>       
+
+                <p>podcast</p>
             </div>
 
             <div class="podcast">
