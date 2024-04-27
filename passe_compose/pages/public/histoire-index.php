@@ -1,8 +1,11 @@
-<?php 
+<?php
+/*
+Fichier : histoire-index.php
+*/
 require './../../bootstrap.php';
-$sql = "SELECT * FROM histoire,participant where histoire.id_participant=participant.id_participant order by année_naissance";
+$sql = "SELECT * FROM histoire,participant where histoire.id_participant=participant.id_participant";
 $histoires = ($dbh->query($sql)->fetchAll());
-echo head("Passé Composé")
+echo head("Passé composé");
 ?>
 <body>
     <div id="logo">
@@ -14,14 +17,14 @@ echo head("Passé Composé")
             <label>Entrez une date</label>
             <input type="text">
         </div>
-        <div id="podcastsList">
-            <div class="podcast">
-                <?php foreach ($histoires as $histoire) {?>
-                
 
+        <?php echo $histoires; ?>
+        <div id="podcastsList">
+        <?php foreach ($histoires as $histoire) {?>
+            <div class="podcast">
                 <p>podcast</p>
             </div>
-
+            <?php };?>
             <div class="podcast">
                 <p>podcast</p>
             </div>
