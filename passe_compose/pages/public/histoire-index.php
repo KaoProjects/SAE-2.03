@@ -18,34 +18,15 @@ echo head("Passé composé");
             <input type="text">
         </div>
 
-        <?php echo $histoires; ?>
+
         <div id="podcastsList">
         <?php foreach ($histoires as $histoire) {?>
             <div class="podcast">
-                <p>podcast</p>
+                <img src="$histoire['image']" alt="">
+                <p clas>podcast</p>
             </div>
-            <?php };?>
-            <div class="podcast">
-                <p>podcast</p>
-            </div>
-            <div class="podcast">
-                <p>podcast</p>
-            </div>
-            <div class="podcast">
-                <p>podcast</p>
-            </div>
-            <div class="podcast">
-                <p>podcast</p>
-            </div>
-            <div class="podcast">
-                <p>podcast</p>
-            </div>
-            <div class="podcast">
-                <p>podcast</p>
-            </div>
-            <div class="podcast">
-                <p>podcast</p>
-            </div>
+        <?php };?>
+            
 
         </div>
 
