@@ -20,14 +20,13 @@ echo head("Passé composé");
 
 
         <div id="podcastsList">
-        <?php foreach ($histoires as $histoire) {?>
-            <div class="podcast">
-                <img src="$histoire['image']" alt="">
-                <p clas>podcast</p>
-            </div>
-        <?php };?>
-            
-
+            <?php foreach($histoires as $histoire) {?>
+                <div class="podcast">
+                    <div class="phantom"></div>
+                    <p class="titre">Ballade dans les Champs</p>
+                    <p class="prenom">Harold</p>
+                </div>
+            <?php };?>
         </div>
 
 
