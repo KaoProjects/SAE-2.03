@@ -2,7 +2,7 @@
 /*
 Fichier : histoire-index.php
 */
-require './../../bootstrap.php';
+require('./../../bootstrap.php');
 $sql = "SELECT * FROM histoire,participant where histoire.id_participant=participant.id_participant";
 $histoires = ($dbh->query($sql)->fetchAll());
 echo head("Passé composé");
@@ -22,9 +22,10 @@ echo head("Passé composé");
         <div id="podcastsList">
             <?php foreach($histoires as $histoire) {?>
                 <div class="podcast">
+                <img src="<?php echo $histoire["image"]?>" alt="" class="podcastPhoto">
                     <div class="phantom"></div>
-                    <p class="titre">Ballade dans les Champs</p>
-                    <p class="prenom">Harold</p>
+                    <p class="titre"><?php echo $histoire['titre']?></p>
+                    <p class="prenom"><?php echo $histoire['prénom']?></p>
                 </div>
             <?php };?>
         </div>
