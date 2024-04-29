@@ -24,7 +24,17 @@ html{
         background-color: #a5aa9b;
         border-radius: 20px 20px 0 0;
     }
-
+    & .podcastPage {
+        & h1{
+            color: white;
+            z-index: 5;
+            font-family: "Sail", system-ui;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 2rem;
+            text-align: right;   
+        }
+    }
     & #podcastsList {
         display: grid;
         grid-template-columns: repeat(3, 250px);
@@ -98,6 +108,10 @@ html{
             font-weight: 600;
             font-style: normal;
             font-size: 3rem;
+        }
+        & p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
         }
     }    
     & .podcast:hover{
