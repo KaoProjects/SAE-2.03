@@ -13,6 +13,9 @@ echo head("Passé composé");
     </div>
 
     <div id="main">
+    <div id="logo">
+        <img src="./assets/images/Logo PC.png" alt="">
+    </div>
         <div id="menu">
             <h1>Saisir une période</h1>
             <form action="" method="post" id="form">
@@ -45,7 +48,7 @@ echo head("Passé composé");
             <?php foreach($histoires as $histoire) {?>
                 <div data_an="<?php echo $histoire["année_naissance"];?>" class="podcast">
                     <a href="./histoire-detail.php/?id=<?php echo $histoire['id_histoire'];?>">
-                    <img src="<?php echo $histoire["image"];?>" alt="" class="podcastPhoto">
+                    <img src="./../../assets/images/photos/<?php echo $histoire["photo"];?>" alt="" class="podcastPhoto">
                     <div class="phantom"></div>
                     <p class="titre"><?php echo $histoire['titre'];?></p>
                     <p class="prenom"><?php echo $histoire['prénom'];?></p>
