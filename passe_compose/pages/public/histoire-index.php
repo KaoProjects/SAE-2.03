@@ -14,8 +14,30 @@ echo head("Passé composé");
 
     <div id="main">
         <div id="menu">
-            <label>Entrez une date</label>
-            <input type="text">
+            <h1>Saisir une période</h1>
+            <form action="" method="post" id="form">
+                <div>
+                    <label >Année de début : </label>
+                    <select name="zl_deb" id="zl_deb">
+                        <?php 	for ($i=1920; $i<=1950;$i++) {
+                                    echo "<option>" . $i . "</option>";
+                                }
+                        ?>
+                    </select>
+                </div>
+                <div>
+                    <label >Année de fin : </label>
+                    <select name="zl_fin" id="zl_fin">
+                        <?php 	for ($i=1920; $i<=1950;$i++) {
+                                    echo "<option>" . $i . "</option>";
+                                }
+                        ?>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" id="btn" >Rechercher</button>
+                </div>
+            </form>
         </div>
 
 
