@@ -16,7 +16,8 @@ echo head("Passé composé");
     <div id="main"> 
         <div id="podcastPage">
             <h1>Podcast de <?php echo $histoires['prenom']; ?></h1>
-            <p><?php echo $histoires['resume'];?></p>
+            <p><?php echo $histoires['résumé'];?></p>
+            <?php echo $histoires["url_son"]?>
 
         </div>
     </div>
