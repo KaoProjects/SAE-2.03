@@ -44,7 +44,7 @@ echo head("Passé composé");
         <div id="podcastsList">
             <?php foreach($histoires as $histoire) {?>
                 <div data_an="<?php echo $histoire["année_naissance"];?>" class="podcast">
-                    <a href="./histoire-detail.php/?id=<?php echo $histoire['id_histoire'];?>">
+                    <a href="./histoire-detail.php?id=<?php echo $histoire['id_histoire'];?>">
                     <img src="./../../assets/images/photos/<?php echo $histoire["photo"];?>" alt="" class="podcastPhoto">
                     <div class="phantom"></div>
                     <p class="titre"><?php echo $histoire['titre'];?></p>
