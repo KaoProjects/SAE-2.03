@@ -49,8 +49,9 @@ echo head("Passé composé");
                     <div class="phantom"></div>
                     <p class="titre"><?php echo $histoire['titre'];?></p>
                     <p class="prenom"><?php echo $histoire['prénom'];?></p>
-                </div>
                     </a>
+                </div>
+                    
             <?php };?>
         </div>
 
