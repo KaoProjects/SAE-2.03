@@ -1,0 +1,57 @@
+@media (max-width: 480px) {
+  #logo {
+    & img {
+      height: 80px;
+      margin: 10px auto;
+      display: block;
+    }
+  }
+
+  #main-detail {
+    max-width: 90%;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px 20px 100px;
+
+    & #menu {
+      padding: 10px 20px;
+      background-color: #a5aa9b;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    & .podcastPage {
+      & h1 {
+        color: white;
+        z-index: 5;
+        font-family: "Sail", system-ui;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 2rem;
+        text-align: right;
+      }
+    }
+  }
+
+  & .podcast {
+    width: 80%;
+    margin: 0 auto 20px;
+    text-align: center;
+    padding: 15px;
+    & p {
+      color: white;
+      z-index: 5;
+      font-family: "Sail", system-ui;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 2rem;
+      text-align: right;
+    }
+
+    & p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+    }
+  }
+}

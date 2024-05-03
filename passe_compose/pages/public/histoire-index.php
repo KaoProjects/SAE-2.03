@@ -12,7 +12,7 @@ echo head("Passé composé");
         <img src="./../../assets/images/Logo PC.png" alt="">
     </div>
 
-    <div id="main">
+    <div id="main-index">
         <div id="menu">
             <h1>Saisir une période</h1>
             <form action="" method="post" id="form">

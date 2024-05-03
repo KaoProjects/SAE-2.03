@@ -20,6 +20,7 @@ function head(string $title = ''): string
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
   <link rel="stylesheet" href="./../../assets/css/style.css">
+  <link rel="stylesheet" href="./../../assets/css/detail.css">
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Namdhinggo:wght@400;500;600;700;800&family=Sail&display=swap')
 </style>
