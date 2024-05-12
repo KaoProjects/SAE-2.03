@@ -8,10 +8,13 @@ $histoires = ($dbh->query($sql)->fetchAll());
 echo head("Passé composé");
 ?>
 <body>
-    <div id="logo">
-        <img src="./../../assets/images/Logo PC.png" alt="">
+    <div id="banniere">
     </div>
-
+    <img src="./../../assets/images/banniere.jpg" alt="Bannière" id="fond-img">
+    <div class="logo">
+        <img src="./../../assets/images/Logo PC.png" alt="Logo Passé Composé" id="logo-img">
+    </div>
+</div>
     <div id="main-index">
         <div id="menu">
             <h1>Saisir une période</h1>

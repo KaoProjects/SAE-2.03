@@ -2,10 +2,29 @@ html {
   background-color: #f3dab3;
 }
 
+body {
+  margin : 0px;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px; 
+  background-color: #f5f5dc; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333; 
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5dc; 
+  border-radius: 5px; 
+}
+
 #logo {
   & img {
     height: 100px;
-    margin: 10px 50px;
   }
 }
 
@@ -119,7 +138,7 @@ html {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 830px) {
   #logo {
     & img {
       height: 80px;
@@ -154,4 +173,53 @@ html {
     height: 100%;
     width: 100%;
   }
+}
+
+#banniere {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+#fond-img{
+  width: 100vw;
+  height: auto;
+  filter:blur(2px);
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 1;
+  display:flex;
+  justify-content: center; 
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 1.5px;
+    background-color: black;
+    top: -1px; /* Position au-dessus du logo */
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 1.5px;
+  background-color: black;
+  bottom: -1px; /* Position au-dessus du logo */
+}
+
+
+
+#logo-img {
+  max-width: 80%; 
+  height: auto; 
+  display: block; 
 }
