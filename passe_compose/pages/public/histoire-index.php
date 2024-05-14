@@ -37,10 +37,10 @@ echo head("Passé composé");
                         ?>
                     </select>
                 </div>
-                <div>
-                    <button type="submit" id="btn" >Rechercher</button>
-                </div>
             </form>
+            <div>
+                <button id="btn" >Rechercher</button>
+            </div>
         </div>
 
 
