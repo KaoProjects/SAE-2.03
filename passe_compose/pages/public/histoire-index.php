@@ -37,14 +37,15 @@ echo head("Passé composé");
                         ?>
                     </select>
                 </div>
-                <div>
-                    <button type="submit" id="btn" >Rechercher</button>
-                </div>
             </form>
+            <div>
+                <button id="btn" >Rechercher</button>
+            </div>
         </div>
 
-
+        <p id="noPodcast">Aucun podcast n'a été trouvé pour la période sélectionnée</p>
         <div id="podcastsList">
+            
             <?php foreach($histoires as $histoire) {?>
                 <div data_an="<?php echo $histoire["année_naissance"];?>" class="podcast">
                     <a href="./histoire-detail.php?id=<?php echo $histoire['id_histoire'];?>">
@@ -60,5 +61,6 @@ echo head("Passé composé");
 
 
     </div>
+    <script src="./../../assets/js/pg2.js"></script>
 </body>
 </html>
