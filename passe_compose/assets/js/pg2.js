@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	const anDeb=document.getElementById("zl_deb");
 	const anFin=document.getElementById("zl_fin");
 	btnRechercher.addEventListener('click', function () {
-		histoires=document.querySelectorAll("figure");
+		histoires=document.querySelectorAll(".podcast");
 		for (i=0 ; i<histoires.length; i++) {
 			histoire=histoires[i];
 			if ( histoire.dataset.an>=anDeb.value && histoire.dataset.an <=anFin.value)

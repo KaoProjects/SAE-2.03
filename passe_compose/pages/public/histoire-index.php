@@ -60,5 +60,6 @@ echo head("Passé composé");
 
 
     </div>
+    <script src="./../../assets/js/pg2.js"></script>
 </body>
 </html>
