@@ -45,6 +45,7 @@ echo head("Passé composé");
 
 
         <div id="podcastsList">
+            <p id="noPodcast">Aucun podcast n'a été trouvé pour la période sélectionnée</p>
             <?php foreach($histoires as $histoire) {?>
                 <div data_an="<?php echo $histoire["année_naissance"];?>" class="podcast">
                     <a href="./histoire-detail.php?id=<?php echo $histoire['id_histoire'];?>">
