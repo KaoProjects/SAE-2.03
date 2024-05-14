@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	const anDeb=document.getElementById("zl_deb");
 	const anFin=document.getElementById("zl_fin");
 	btnRechercher.addEventListener('click', function () {
+		console.log("Filter Started")
 		histoires=document.querySelectorAll(".podcast");
 		for (i=0 ; i<histoires.length; i++) {
 			histoire=histoires[i];
