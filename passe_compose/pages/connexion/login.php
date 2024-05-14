@@ -37,6 +37,8 @@ echo head("Passé composé");
 		]);
 		$utilisateur = $stmt->fetch();
 		if ($utilisateur) {
+			session_start();
+			$_SESSION['login']=$login_saisi;
 			header('location: menu-backoffice.php');
 		}
 		else
