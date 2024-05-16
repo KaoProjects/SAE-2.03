@@ -14,7 +14,11 @@ echo head("Passé composé");
     <div class="indexlogo">
         <img src="./../../assets/images/Logo PC.png" alt="Logo Passé Composé" id="logoindex-img">
     </div>
-</div>
+
+    <div id="paragraphe">
+        <p> Bienvue sur Passé Composé, ici nous vous proposons d'écouter les histoires passionnantes de nos aînés en un simple clic.</p>
+    </div>
+
     <div id="main-index">
         <div id="menu">
             <h1>Saisir une période</h1>
