@@ -1,5 +1,6 @@
 html {
   background-color: #f3dab3;
+  font-size: 12px;
 }
 
 @font-face {
@@ -45,8 +46,7 @@ body {
   align-items: center;
 
   background-color: white;
-
-  height: 1000px;
+  padding: 30px 0;
 
   .podcastPage {
     & h1 {
@@ -233,7 +233,7 @@ body {
 
 #logo {
   & img {
-    height: 100px;
+    height: 150px;
     margin: 10px 50px;
   }
 }
@@ -293,6 +293,6 @@ button:hover {
 
 #paragraphe p {
   text-align: center;
-  font-size: 30px;
+  font-size: 3rem;
   color: #000000;
 }
