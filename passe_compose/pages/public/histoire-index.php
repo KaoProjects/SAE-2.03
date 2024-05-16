@@ -11,8 +11,8 @@ echo head("Passé composé");
     <div id="banniere">
     </div>
     <img src="./../../assets/images/banniere.jpg" alt="Bannière" id="fond-img">
-    <div class="logo">
-        <img src="./../../assets/images/Logo PC.png" alt="Logo Passé Composé" id="logo-img">
+    <div class="indexlogo">
+        <img src="./../../assets/images/Logo PC.png" alt="Logo Passé Composé" id="logoindex-img">
     </div>
 </div>
     <div id="main-index">

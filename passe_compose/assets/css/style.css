@@ -22,7 +22,7 @@ body {
   border-radius: 5px; 
 }
 
-#logo {
+#logoIndex {
   & img {
     height: 100px;
   }
@@ -139,7 +139,7 @@ body {
 }
 
 @media (max-width: 830px) {
-  #logo {
+  #logoIndex {
     & img {
       height: 80px;
       margin: 10px auto;
@@ -188,7 +188,7 @@ body {
   filter:blur(2px);
 }
 
-.logo {
+.logoIndex {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -198,28 +198,35 @@ body {
   justify-content: center; 
 }
 
-.logo::before {
+.logoIndex::before {
     content: "";
     position: absolute;
     width: 70%;
     height: 1.5px;
     background-color: black;
-    top: -1px; /* Position au-dessus du logo */
+    top: -1px; /* Position au-dessus du logoIndex */
 }
 
-.logo::after {
+.logoIndex::after {
   content: "";
   position: absolute;
   width: 70%;
   height: 1.5px;
   background-color: black;
-  bottom: -1px; /* Position au-dessus du logo */
+  bottom: -1px; /* Position au-dessus du logoIndex */
 }
 
 
 
-#logo-img {
+#logoIndex-img {
   max-width: 80%; 
   height: auto; 
   display: block; 
+}
+
+#logo {
+  & img {
+    height: 100px;
+    margin: 10px 50px;
+  }
 }

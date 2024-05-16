@@ -21,6 +21,8 @@ function head(string $title = ''): string
  
   <link rel="stylesheet" href="./../../assets/css/style.css">
   <link rel="stylesheet" href="./../../assets/css/detail.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Namdhinggo:wght@400;500;600;700;800&family=Sail&display=swap')
 </style>
