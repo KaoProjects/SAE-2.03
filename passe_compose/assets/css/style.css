@@ -2,6 +2,14 @@ html {
   background-color: #f3dab3;
 }
 
+@font-face {
+  font-family: 'Montserrat Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Montserrat Regular'), url('Montserrat-Regular.woff') format('woff');
+  }
+  
+
 body {
   margin : 0px;
   overflow-x: hidden;
@@ -32,17 +40,15 @@ body {
   max-width: 1100px;
   margin: 50px auto;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   background-color: white;
 
   height: 1000px;
 
-  & #menu {
-    padding: 10px 30px;
-    background-color: #a5aa9b;
-    border-radius: 20px 20px 0 0;
-  }
-  & .podcastPage {
+  .podcastPage {
     & h1 {
       color: white;
       z-index: 5;
@@ -190,13 +196,14 @@ body {
 
 .logo {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 400px;
+  left: 800px;
   transform: translate(-50%, -50%); 
   z-index: 1;
   display:flex;
-  justify-content: center; 
+  justify-content: center;  
 }
+
 
 .logo::before {
     content: "";
@@ -204,7 +211,7 @@ body {
     width: 70%;
     height: 1.5px;
     background-color: black;
-    top: -1px; /* Position au-dessus du logo */
+    top: -1px; 
 }
 
 .logo::after {
@@ -213,7 +220,7 @@ body {
   width: 70%;
   height: 1.5px;
   background-color: black;
-  bottom: -1px; /* Position au-dessus du logo */
+  bottom: -1px; 
 }
 
 
@@ -222,4 +229,63 @@ body {
   max-width: 80%; 
   height: auto; 
   display: block; 
+}
+
+#menu {
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  font-family: 'Montserrat Regular';
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c5c7c5;
+}
+
+#btn {
+  color: rgb(255, 255, 255);
+}
+
+#paragraphe {
+  display : flex;
+  justify-content: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+#paragraphe p {
+  text-align: center;
+  font-size: 30px;
+  color: #000000;
 }
