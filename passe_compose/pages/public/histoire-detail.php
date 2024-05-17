@@ -11,9 +11,14 @@ echo head("Passé composé");
 ?>
 
 <body>
-    
     <div id="logo">
         <img src="./../../assets/images/Logo PC.png" alt="">
+    </div>
+    <div id="video-container">
+        <video autoplay muted loop>
+            <source src="./../../assets/images/FondDetail.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos au format HTML5.
+        </video>
     </div>
 
     <div id="main-detail"> 
@@ -23,7 +28,5 @@ echo head("Passé composé");
             <?php echo $histoires["url_son"]?>
         </div>
     </div>
-    <canvas></canvas>
-    <script src="./../../assets/js/detailBG.js"></script>
 </body>
 </html>

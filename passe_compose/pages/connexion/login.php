@@ -10,26 +10,19 @@ echo head("Passé composé");
 ?>
 <body style="padding:30px">
 	<?php if ( $_SERVER['REQUEST_METHOD'] != 'POST') { ?>
-		<div id="logo">
-        	<img src="./../../assets/images/Logo PC.png" alt="Logo Passé Composé">
-    	</div>
-		<div id="main-index">
-			<div id="form">
-				<form action="./login.php" method="post">
-					<div>
-						<label >Login :</label>
-						<input name="zt_login" type="text" size="15" required>
-					</div>
-					<div>
-						<label >Mot de passe :</label>
-						<input name="zt_mp" type="password" size="15" required>
-					</div>
-					<div>
-						<button type="submit" id="submit">Connexion</button>
-					</div>
-				</form>
+		<form action="./login.php" method="post">
+			<div>
+				<label >Login :</label>
+				<input name="zt_login" type="text" size="15" required>
 			</div>
-		</div>	
+			<div>
+				<label >Mot de passe :</label>
+				<input name="zt_mp" type="password" size="15" required>
+			</div>
+			<div>
+				<button type="submit" >Connexion</button>
+			</div>
+		</form>
 	<?php }
 	else {
 		
