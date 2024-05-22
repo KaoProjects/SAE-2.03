@@ -232,7 +232,11 @@ canvas {
   bottom: -1px; /* Position au-dessus du logo */
 }
 
-
+#logo-img{
+  margin: auto;
+  display: block;
+  max-width: 80%;
+}
 
 #logoIndex-img {
   max-width: 80%; 
