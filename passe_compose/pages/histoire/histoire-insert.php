@@ -38,14 +38,15 @@ echo head('Ajouter une histoire');
 			<div>
 				<label> Participant : </label>
 				<?php
-				$sql = "SELECT id_participant, prénom FROM participant";
+				$sql = "SELECT id_participant, prénom, photo FROM participant";
 				$participants = ($dbh->query($sql)->fetchAll());?>
-				<select name="zt_id" >
+				<div>
 					<?php 
 						foreach ($participants as $participant) {?>
-						<option value="<?php echo $participant['id_participant']?>"><?php echo $participant['prénom']?></option>
+						<input name="zt_id" type="radio" value="<?php echo $participant['id_participant']?>"><?php echo $participant['prénom']?><img src="./../../assets/images/photos/<?php echo $participant['photo']?>"></input>
 					<?php }; ?>
-				</select>
+				</div>
+			</div>	
 			<div>
 				<label > Titre :</label>
 				<input name="zt_titre" type="text" size="50" required>
