@@ -9,11 +9,9 @@ echo head("Passé composé");
 ?>
 <body>
     <div id="banniere">
-    </div>
-    <img src="./../../assets/images/banniere.jpg" alt="Bannière" id="fond-img">
-    <div class="logo">
         <img src="./../../assets/images/Logo PC.png" alt="Logo Passé Composé" id="logo-img">
     </div>
+    
 
     <div id="paragraphe">
         <p> Bienvue sur Passé Composé, ici nous vous proposons d'écouter les histoires passionnantes de nos aînés en un simple clic.</p>
