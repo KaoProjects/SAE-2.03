@@ -29,7 +29,7 @@ function head(string $title = ''): string
   <title>$title</title>
 </head>
 HTML_HEAD;
-}
+} 
 
 
 /**
