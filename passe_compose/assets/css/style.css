@@ -1,15 +1,8 @@
 html {
   background-color: #f3dab3;
   font-size: 12px;
+  font-family: "Montserrat";
 }
-
-@font-face {
-  font-family: 'Montserrat Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Montserrat Regular'), url('Montserrat-Regular.woff') format('woff');
-  }
-  
 
 body {
   margin : 0px;
@@ -46,7 +39,7 @@ canvas {
 }
 
 #main-index {
-  max-width: 1100px;
+  max-width: 90%;
   margin: 50px auto;
   border-radius: 20px;
   display: flex;
@@ -68,14 +61,12 @@ canvas {
     }
   }
   & #podcastsList {
-    display: grid;
-    grid-template-columns: repeat(3, 250px);
-    grid-template-rows: repeat(3, 250px);
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-
-    margin: 20px;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 15px;
   }
 
   & .podcast {
@@ -122,6 +113,9 @@ canvas {
       z-index: 3;
       opacity: 30%;
 
+      width: 100%;
+      height: 100%;
+
       transition: opacity 0.3s ease;
 
       position: absolute;
@@ -152,42 +146,6 @@ canvas {
   }
 }
 
-@media (max-width: 830px) {
-  #logoIndex {
-    & img {
-      height: 80px;
-      margin: 10px auto;
-      display: block;
-    }
-  }
-
-  #main-index {
-    max-width: 90%;
-    padding: 20px 20px 100px;
-
-    & #menu {
-      padding: 10px 20px;
-      border-radius: 20px;
-      text-align: center;
-    }
-
-    & #podcastsList {
-      display: block;
-      margin: 20px auto;
-    }
-  }
-
-  & .podcast {
-    width: 80%;
-    margin: 0 auto 20px;
-    text-align: center;
-    padding: 15px;
-  }
-  .phantom {
-    height: 100%;
-    width: 100%;
-  }
-}
 
 #banniere {
   height: 100vh;
@@ -303,4 +261,28 @@ button:hover {
   #submit{
     width: 100%;
   }
+}
+
+footer {
+  font-size: 2rem;
+  & div {
+    display:inline-block;
+  }
+  & #footerLogo{
+    margin: 15px;
+    & img {
+      height: 200px;
+    }
+  }
+  & div:nth-child(2){
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  
+  }
+  width: 100%;
+  background-color: white;
+
+  position: absolute;
+  bottom: 0;
 }

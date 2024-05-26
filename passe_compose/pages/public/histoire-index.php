@@ -50,9 +50,9 @@ echo head("Passé composé");
             
             <?php foreach($histoires as $histoire) {?>
                 <div data_an="<?php echo $histoire["année_naissance"];?>" class="podcast">
+                    <div class="phantom"></div>
                     <a href="./histoire-detail.php?id=<?php echo $histoire['id_histoire'];?>">
                     <img src="./../../assets/images/photos/<?php echo $histoire["photo"];?>" alt="" class="podcastPhoto">
-                    <div class="phantom"></div>
                     <p class="titre"><?php echo $histoire['titre'];?></p>
                     <p class="prenom"><?php echo $histoire['prénom'];?></p>
                     </a>
@@ -60,8 +60,6 @@ echo head("Passé composé");
                     
             <?php };?>
         </div>
-
-
     </div>
     <script src="./../../assets/js/pg2.js"></script>
 </body>
