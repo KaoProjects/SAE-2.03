@@ -61,6 +61,9 @@ echo head("Passé composé");
             <?php };?>
         </div>
     </div>
+    
+    <?php include './../../Helpers/footer.html'?>
+
     <script src="./../../assets/js/pg2.js"></script>
 </body>
 </html>

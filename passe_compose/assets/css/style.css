@@ -74,6 +74,7 @@ canvas {
     width: 250px;
     position: relative;
     border-radius: 30px;
+    margin: 15px 30px;
 
     & p {
       color: white;
@@ -88,6 +89,11 @@ canvas {
       position: absolute;
       bottom: 50px;
       right: 20px;
+      hyphens: auto;
+    }
+
+    & .titre::first-letter{
+      text-transform: uppercase;
     }
     & .prenom {
       position: absolute;
@@ -265,24 +271,33 @@ button:hover {
 
 footer {
   font-size: 2rem;
-  & div {
-    display:inline-block;
-  }
+  display: flex;
+  flex-wrap: wrap;
+
   & #footerLogo{
-    margin: 15px;
+    margin: 15px auto;
     & img {
       height: 200px;
     }
   }
-  & div:nth-child(2){
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-  
+
+  & div {
+    margin:0 auto;
+  }
+  & div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  & p {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
   }
   width: 100%;
   background-color: white;
-
-  position: absolute;
-  bottom: 0;
+  margin-top: 30px;
+  position: relative;
 }
