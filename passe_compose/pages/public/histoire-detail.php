@@ -24,8 +24,10 @@ echo head("Passé composé");
             </div>
         </div>
 
-        <canvas></canvas>
-        <script src="./../../assets/js/detailBG.js"></script>
+        <div id="ambient"></div>
+        <script src="./../../assets/js/bvambient.js"></script>
     </div>
+
+    <?php include './../../Helpers/footer.html'?>
 </body>
 </html>
