@@ -4,9 +4,12 @@
 Fichier : histoire-index.php
 */
 require('./../../bootstrap.php');
-$sql = "SELECT * FROM histoire,participant where histoire.id_participant=participant.id_participant AND id_histoire=".$_GET['id'];
-$histoires = ($dbh->query($sql)->fetchAll());
-$histoires = $histoires[0];
+$sql = "SELECT * FROM histoire,participant where histoire.id_participant=participant.id_participant AND id_histoire = :id";
+$stmt = $dbh->prepare($sql);
+		$histoire = $stmt->execute([
+			':id' => $_GET['id'],
+		]);
+$histoires = $stmt->fetch();;
 echo head("Passé composé"); 
 ?>
 
