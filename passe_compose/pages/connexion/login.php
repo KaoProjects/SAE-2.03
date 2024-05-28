@@ -36,13 +36,19 @@ echo head("Passé composé");
 			':mp' => $mp_saisi,
 		]);
 		$utilisateur = $stmt->fetch();
-		if ($utilisateur) {
-			session_start();
-			$_SESSION['login']=$login_saisi;
-			header('location: menu-backoffice.php');
-		}
-		else
-			header('location: login.php');
+			if ($utilisateur) {
+$hash= $utilisateur["mot_de_passe"];
+if (password_verify($mp_saisi,$hash)) {
+session_start();
+$_SESSION['login']=$login_saisi;
+header('location: menu-backoffice.php');
+}
+else
+header('location: login.php');
+} 
+else
+header('location: login.php');
+
 	}
 ?>
 </body>
