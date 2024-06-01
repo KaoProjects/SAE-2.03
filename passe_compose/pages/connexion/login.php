@@ -11,16 +11,15 @@ echo head("Passé composé");
 
 <body style="padding:30px">
     <?php if ( $_SERVER['REQUEST_METHOD'] != 'POST') { ?>
+        <div class="form-conteneur">
     <form action="./login.php" method="post">
-        <div>
+<div class="grp">
             <label>Login :</label>
             <input name="zt_login" type="text" size="15" required>
-        </div>
-        <div>
+            <div class="grp">
             <label>Mot de passe :</label>
             <input name="zt_mp" type="password" size="15" required>
-        </div>
-        <div>
+            <div class="grp">
             <button type="submit">Connexion</button>
         </div>
     </form>

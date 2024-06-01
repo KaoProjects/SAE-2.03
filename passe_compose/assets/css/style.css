@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  margin : 0px;
+  margin: 0px;
   overflow-x: hidden;
 }
 #ambient {
@@ -18,18 +18,18 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px; 
-  background-color: #f5f5dc; 
+  width: 10px;
+  background-color: #f5f5dc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #333; 
-  border-radius: 5px; 
+  background-color: #333;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f5f5dc; 
-  border-radius: 5px; 
+  background-color: #f5f5dc;
+  border-radius: 5px;
 }
 
 #logoIndex {
@@ -92,7 +92,7 @@ body {
       hyphens: auto;
     }
 
-    & .titre::first-letter{
+    & .titre::first-letter {
       text-transform: uppercase;
     }
     & .prenom {
@@ -152,7 +152,6 @@ body {
   }
 }
 
-
 #banniere {
   height: 100vh;
   width: 100%;
@@ -162,28 +161,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-
 }
 
-#fond-img{
+#fond-img {
   width: 100vw;
   height: 100vh;
-  filter:blur(2px);
+  filter: blur(2px);
 }
 
-#logo-img{
+#logo-img {
   max-width: 80%;
   border-color: #000000;
-  border-top-style:solid;
+  border-top-style: solid;
   border-bottom-style: solid;
   border-width: 3px;
 }
 
 #logoIndex-img {
-  max-width: 80%; 
-  height: auto; 
-  display: block; 
+  max-width: 80%;
+  height: auto;
+  display: block;
 }
 
 #logo {
@@ -197,7 +194,7 @@ body {
   padding: 20px;
   text-align: center;
   width: 300px;
-  font-family: 'Montserrat Regular';
+  font-family: "Montserrat Regular";
 }
 
 h1 {
@@ -241,7 +238,7 @@ button:hover {
 }
 
 #paragraphe {
-  display : flex;
+  display: flex;
   justify-content: center;
   margin-right: 100px;
   margin-left: 100px;
@@ -253,7 +250,38 @@ button:hover {
   font-size: 3rem;
   color: #000000;
 }
+.Gestion-conteneur a {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.Gestion-conteneur p {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.Gestion-conteneur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.form-conteneur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.grp {
+  margin-bottom: 50%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #form {
   label {
     font-size: 3rem;
@@ -261,10 +289,10 @@ button:hover {
   input {
     font-size: 3rem;
     margin: 5px 0 10px 0;
-    padding: 5px;
+    padding: 10px;
   }
 
-  #submit{
+  #submit {
     width: 100%;
   }
 }
@@ -274,7 +302,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
 
-  & #footerLogo{
+  & #footerLogo {
     margin: 15px auto;
     & img {
       height: 200px;
@@ -282,9 +310,9 @@ footer {
   }
 
   & div {
-    margin:0 auto;
+    margin: 0 auto;
   }
-  & div:last-child{
+  & div:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,4 +328,10 @@ footer {
   background-color: white;
   margin-top: 30px;
   position: relative;
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }

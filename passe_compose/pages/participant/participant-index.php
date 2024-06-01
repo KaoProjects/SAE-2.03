@@ -6,7 +6,7 @@ session_start();
 if (! isset($_SESSION["login"]))
 	header('location: ./../connexion/login.php');
 else
-	echo "Bonjour " . $_SESSION["login"];
+$welcomeMessage = "Bonjour " . $_SESSION["login"];
 require './../../bootstrap.php';
 
 $sql = "SELECT * FROM  participant order by année_naissance";
@@ -14,6 +14,9 @@ $participants = ($dbh->query($sql)->fetchAll());
 echo head("Passé composé");
 ?>
 <body style="padding:30px">
+<div class="Gestion-conteneur">
+<div class="welcome-message"><?php echo $welcomeMessage; ?></div>
+
 	<a href="participant-insert.php" >Ajouter un participant</a>
     <h1>Passé Composé - Liste des participants</h1>
 	<?php foreach ($participants as $participant) { ?>
