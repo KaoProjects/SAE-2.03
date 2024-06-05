@@ -28,6 +28,13 @@ function head(string $title = ''): string
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Namdhinggo:wght@400;500;600;700;800&family=Sail&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 </style>
   <title>$title</title>
 </head>

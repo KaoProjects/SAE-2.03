@@ -11,18 +11,19 @@ echo head("Passé composé");
 
 <body style="padding:30px">
     <?php if ( $_SERVER['REQUEST_METHOD'] != 'POST') { ?>
-        <div class="form-conteneur">
-    <form action="./login.php" method="post">
-<div class="grp">
-            <label>Login :</label>
-            <input name="zt_login" type="text" size="15" required>
-            <div class="grp">
-            <label>Mot de passe :</label>
-            <input name="zt_mp" type="password" size="15" required>
-            <div class="grp">
-            <button type="submit">Connexion</button>
+        <div id="logo">
+            <img src="./../../assets/images/Logo PC.png" alt="">
         </div>
-    </form>
+        
+        <div id="form">
+        <form action="./login.php" method="post">
+                <label>Login :</label>
+                <input name="zt_login" type="text" size="15" required>
+                <label>Mot de passe :</label>
+                <input name="zt_mp" type="password" size="15" required>
+                <button type="submit">Connexion</button>
+        </form>
+        </div>
     <?php }
 	else {
 		
@@ -45,10 +46,7 @@ else{
 	header('location: login.php');
 }
 }
-else
-{
-    header('location: login.php');
-}
+
 
 }
 ?>
