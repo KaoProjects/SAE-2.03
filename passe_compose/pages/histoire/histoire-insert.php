@@ -33,38 +33,40 @@ echo head('Ajouter une histoire');
 	}
 	else {
 	?>
-    	<h1>Ajouter une histoire</h1>
-		<form action="" method="post" enctype="multipart/form-data">
-			<div>
-				<label> Participant : </label>
-				<?php
-				$sql = "SELECT id_participant, prénom, photo FROM participant";
-				$participants = ($dbh->query($sql)->fetchAll());?>
+		<div id="main-index">
+			<h1>Ajouter une histoire</h1>
+			<form action="" method="post" enctype="multipart/form-data">
 				<div>
-					<?php 
-						foreach ($participants as $participant) {?>
-						<input name="zt_id" type="radio" value="<?php echo $participant['id_participant']?>"><?php echo $participant['prénom']?><img src="./../../assets/images/photos/<?php echo $participant['photo']?>"></input>
-					<?php }; ?>
+					<label> Participant : </label>
+					<?php
+					$sql = "SELECT id_participant, prénom, photo FROM participant";
+					$participants = ($dbh->query($sql)->fetchAll());?>
+					<div>
+						<?php 
+							foreach ($participants as $participant) {?>
+							<input name="zt_id" type="radio" value="<?php echo $participant['id_participant']?>"><?php echo $participant['prénom']?><img src="./../../assets/images/photos/<?php echo $participant['photo']?>"></input>
+						<?php }; ?>
+					</div>
+				</div>	
+				<div>
+					<label > Titre :</label>
+					<input name="zt_titre" type="text" size="50" required>
 				</div>
-			</div>	
-			<div>
-				<label > Titre :</label>
-				<input name="zt_titre" type="text" size="50" required>
-			</div>
-			<div >
-				<label > Résumé :</label>
-				<input name="zl_resum" type="text" size="200" required>
-			</div>
-			<div>
-				<label >Lien SoundCloud :</label>
-				<input name="zl_link" type="text" required >
-			</div>
-			<div>
-				<input type="submit" value="Envoyer"></input>
-				<a href="histoire-index.php" >Annuler</a>
-			</div>
-		</form>
-    <?php };	?>
+				<div >
+					<label > Résumé :</label>
+					<input name="zl_resum" type="text" size="200" required>
+				</div>
+				<div>
+					<label >Lien SoundCloud :</label>
+					<input name="zl_link" type="text" required >
+				</div>
+				<div>
+					<input type="submit" value="Envoyer"></input>
+					<a href="histoire-index.php" >Annuler</a>
+				</div>
+			</form>
+			<?php };	?>
+		</div>
 </body>
 
 </html>

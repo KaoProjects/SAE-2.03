@@ -8,20 +8,14 @@ require './../../bootstrap.php';
 echo head("Back-office de Passé composé");
 ?>
 
-<body style="padding:30px">
-	<nav>
-	<div class="Gestion-conteneur">
-	<div class="welcome-message"><?php echo $welcomeMessage; ?></div>
-	
-		<div id="paragraphe">
-			<a href="./../participant/participant-index.php">Gestion des participants</a>
-		</div>
-		<div id="paragraphe">
-			<a href="./../histoire/histoire-index.php">Gestion des histoires</a>
-		</div>
-		<div id="paragraphe">
-			<a href="./deconnexion.php">Déconnexion</a>
-		</div>
-	</nav>
+<body>
+	<div id="main-index">
+		<h1 style="color:black;font-size:4rem"><?php echo $welcomeMessage; ?></h1>
+		
+		<a href="./../participant/participant-index.php"><span class="material-symbols-outlined">person</span>Gestion des participants</a>
+		<a href="./../histoire/histoire-index.php"><span class="material-symbols-outlined">collections_bookmark</span>Gestion des histoires</a>
+		<a href="./deconnexion.php"><span class="material-symbols-outlined">logout</span>Déconnexion</a>
+	</div>
+
 </body>
 </html>

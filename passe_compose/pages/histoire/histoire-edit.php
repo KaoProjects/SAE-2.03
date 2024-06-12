@@ -21,24 +21,26 @@ echo head('Modifier une histoire');
 			':param' => $num,
 		]);
 		$histoire = $stmt->fetch();?>
+		<div id="main-index">
 		<h1>Éditer un histoire</h1>
-		<form action="" method="post" enctype="multipart/form-data" >
-			<input type="hidden" name="id" value="<?php echo $histoire['id_histoire'] ?>">
-			<div>
-				<label>Titre :</label>
-				<input name="zt_titre" type="text" size="50" value="<?php echo $histoire['titre'] ?>">
-			</div>
-			<div >
-				<label>Résumé :</label>
-				<input name="zl_resum" type="text" size="200" value="<?php echo $histoire['résumé'] ?>">
-			</div>
-			<div>
-				<label>Lien SoundCloud :</label>
-				<input name="zl_link" type="text" value="<?php echo $histoire['url_son'] ?>">
-			</div>
-			<button type="submit" >Modifier</button>
-			<a href="histoire-index.php" >Annuler</a>
-    </form>
+			<form action="" method="post" enctype="multipart/form-data" >
+				<input type="hidden" name="id" value="<?php echo $histoire['id_histoire'] ?>">
+				<div>
+					<label>Titre :</label>
+					<input name="zt_titre" type="text" size="50" value="<?php echo $histoire['titre'] ?>">
+				</div>
+				<div >
+					<label>Résumé :</label>
+					<input name="zl_resum" type="text" size="200" value="<?php echo $histoire['résumé'] ?>">
+				</div>
+				<div>
+					<label>Lien SoundCloud :</label>
+					<input name="zl_link" type="text" value="<?php echo $histoire['url_son'] ?>">
+				</div>
+				<button type="submit" >Modifier</button>
+				<a href="histoire-index.php" >Annuler</a>
+		</form>
+		</div>	
     <?php
 } else {?>
     <?php

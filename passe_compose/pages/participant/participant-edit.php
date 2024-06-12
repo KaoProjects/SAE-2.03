@@ -21,6 +21,7 @@ echo head('Modifier un participant');
 			':param' => $num,
 		]);
 		$participant = $stmt->fetch();?>
+		<div id="main-index">
 		<h1>Éditer un participant</h1>
 		<form action="" method="post" enctype="multipart/form-data" >
 			<input type="hidden" name="id" value="<?php echo $participant['id_participant'] ?>">
@@ -57,6 +58,7 @@ echo head('Modifier un participant');
 			</div>
 			<button type="submit" >Modifier</button>
 			<a href="participant-index.php" >Annuler</a>
+		</div>
     </form>
     <?php
 } else {?>

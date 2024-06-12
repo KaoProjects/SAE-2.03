@@ -53,7 +53,8 @@ echo head('Ajouter un participant');
 	}
 	else {
 	?>
-    	<h1>Ajouter un participant</h1>
+		<div id="main-index">
+		<h1>Ajouter un participant</h1>
 		<form action="" method="post" enctype="multipart/form-data">
 			<div>
 				<label >Prénom:</label>
@@ -94,6 +95,7 @@ echo head('Ajouter un participant');
 				<a href="participant-index.php" >Annuler</a>
 			</div>
 		</form>
+		</div>
     <?php }	?>
  
   <script>

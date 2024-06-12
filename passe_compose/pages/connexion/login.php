@@ -14,16 +14,22 @@ echo head("Passé composé");
         <div id="logo">
             <img src="./../../assets/images/Logo PC.png" alt="">
         </div>
-        
         <div id="form">
-        <form action="./login.php" method="post">
-                <label>Login :</label>
-                <input name="zt_login" type="text" size="15" required>
-                <label>Mot de passe :</label>
-                <input name="zt_mp" type="password" size="15" required>
-                <button type="submit">Connexion</button>
-        </form>
+            <form action="./login.php" method="post">
+                    <label>Login :</label>
+                    <input  name="zt_login" type="text" size="15" required>
+                    <label>Mot de passe :</label>
+                    <input id="zt_mp" name="zt_mp" type="password" size="15" required>
+
+                    <p id="showPass">
+                        <span class="material-symbols-outlined" id="eye">visibility</span>
+                        Afficher le mot de passe
+                    </p>
+                    <button type="submit">Connexion</button>
+            </form>
         </div>
+        
+        <script src="./../../assets/js/showpassword.js"></script>
     <?php }
 	else {
 		
